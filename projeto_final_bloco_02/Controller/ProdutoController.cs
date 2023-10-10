@@ -5,6 +5,8 @@ using projeto_final_bloco_02.Service;
 
 namespace projeto_final_bloco_02.Controller
 {
+    [Route("~/produtos")]
+    [ApiController]
     public class ProdutoController : ControllerBase
     {
         private readonly IProdutoService _produtoService;

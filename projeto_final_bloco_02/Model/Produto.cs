@@ -18,9 +18,11 @@ namespace projeto_final_bloco_02.Model
         public string Descricao { get; set; } = string.Empty;
 
         [Column(TypeName = "int")]
-        public int quantidade { get; set; }
+        public int Quantidade { get; set; }
 
         [Column(TypeName = "decimal(6,2)")]
         public decimal Preco { get; set; }
+
+        public virtual Categoria? Categoria { get; set; }
     }
 }
